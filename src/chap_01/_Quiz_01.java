@@ -16,7 +16,7 @@ public class _Quiz_01 {
         남은 거리 1.2km
         */
 
-        String busName = "상암 08";
+        String busName = "상암 08 ";
         int min = 3;
         double distance = 1.2;
 

@@ -19,7 +19,7 @@ public class _05_Operator5 {
         x = 3;
         y = 3;
         String s = (x != y) ? "달라요" : "같아요";
-        System.out.println(s); //달라요 d
+        System.out.println(s); //달라요
         
     }
 }

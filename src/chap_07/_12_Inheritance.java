@@ -4,8 +4,6 @@ import chap_07.Camera.Camera;
 import chap_07.Camera.FactoryCam;
 import chap_07.Camera.SpeedCam;
 
-import javax.swing.*;
-
 public class _12_Inheritance {
     public static void main(String[] args) {
         //상속
@@ -18,9 +16,17 @@ public class _12_Inheritance {
         System.out.println(factoryCam.name);
         System.out.println(speedCam.name);
 
+        System.out.println("-------------");
+
         camera.takePicture();
         factoryCam.recordVideo();
         speedCam.takePicture();
+
+        System.out.println();
+
+        factoryCam.detectFire();
+        speedCam.checkSpeed();
+        speedCam.recognizeLicensePlate();
 
 
     }

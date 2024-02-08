@@ -38,12 +38,16 @@ public class _Quiz_12 {
         rappingThread1.start();
         rappingThread2.start();
 
-        try {
-            rappingThread1.join();
-            rappingThread2.join();
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+        while (rappingThread1.isAlive() || rappingThread2.isAlive()){
+
         }
+
+//        try {
+//            rappingThread1.join();
+//            rappingThread2.join();
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
 
 
         Runnable runnableSet = new Runnable() {

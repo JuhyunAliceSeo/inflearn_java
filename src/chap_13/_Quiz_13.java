@@ -16,7 +16,7 @@ public class _Quiz_13 {
          퀴즈내용이 더이상 없을때까지 반복
         */
 
-        try(BufferedWriter bw = new BufferedWriter(new FileWriter("saying.txt", true))) { //APPEND : 수정을 안하고 추가 되는지
+        try(BufferedWriter bw = new BufferedWriter(new FileWriter("saying.txt"))) { //APPEND : 수정을 안하고 추가 되는지
             bw.write("세 살 __ 여든까지 간다");// 내용이 덮여쓰임
             bw.newLine();
             bw.write("버릇");
@@ -29,7 +29,7 @@ public class _Quiz_13 {
             bw.newLine();
             bw.write("걸음");
             bw.newLine();
-        } catch (IOException e) {
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
 
@@ -55,16 +55,16 @@ public class _Quiz_13 {
                 if(input.equals(answer)){
                     System.out.println("정답입니다!!");
                 } else{
-                    System.out.println("틀렸습니다. 정답은 " + answer + "입니다.");
+                    System.out.println("틀렸습니다. 정답은 " + answer + "입니다.\n");
                 }
             }
 
             System.out.println("----------------------------------------------");
             System.out.println("모든 퀴즈가 완료되었습니다.");
             System.out.println("수고하셨습니다.");
-        } catch (IOException e) {
+
+        } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }

@@ -11,7 +11,7 @@ public class BlackBox {
     static int counter = 0;//시리얼 번호를 생성해주는 영상(처음엔 0이었다가 ++연산을 통해 시리얼 번호 생성)
 
     //static을 붙이는 순간 클래스 변수가 되고 이 클래스로부터 만들어 지는 모든 개체에 똑같이 적용이 됨
-    static boolean canAutoReport = false; //자동 신고 기능
+    static boolean canAutoReport = false; //자동 신고 기능 //static 을 붙이면 클래스 변수
 
     BlackBox(){  //기본 생성자 : 객체가 생성될때 자동으로 호출되는 메소드
 //        System.out.println("기본 생성자 호출");

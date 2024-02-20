@@ -25,7 +25,7 @@ public class _01_Class {
         // 클래스에서 만들어지는 객체를 불러오는 법
         BlackBox bbox = new BlackBox();
         // BlackBox 클래스로부터 bbox 객체 생성
-        // bbox 객테는 BlackBox 클래스의 인스턴스
+        // bbox 객체는 BlackBox 클래스의 인스턴스
 
         BlackBox bbox2 = new BlackBox();
 

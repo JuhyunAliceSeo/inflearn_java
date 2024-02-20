@@ -7,7 +7,7 @@ public class _01_Method {
      }
 
     public static void main(String[] args) {
-       //메소드 : 기능들의 묶음
+       //메소드 : 기능하는 코드들의 묶음
         //메소드 호출
         System.out.println("메소드 호출 전");
         sayHello();

@@ -14,11 +14,12 @@ public class _02_Parameter {
         System.out.println(number + " 의 " + exponent + " 승은 " +  result);
     }
     public static void main(String[] args) {
+        // 위의 power, powerByExp의 메소드를 호출하는 방법
         //전달값, Parameter
         // 2 -> 2 * 2 = 4
         // 3 -> 3 * 3 = 9
 
-        //Argument, 인수
+        //Argument, 인수 -> 전달값
         power(2);
         power(3);
 

@@ -18,7 +18,7 @@ public class _03_Return {
     }
 
     public static void main(String[] args) {
-        // 반환값
+        // 반환값(Return)
         String contactNumber = getPhoneNumber();
         System.out.println("호텔 전화번호 : " + contactNumber);
 

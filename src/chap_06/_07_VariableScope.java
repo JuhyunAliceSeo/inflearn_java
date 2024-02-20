@@ -1,8 +1,8 @@
 package chap_06;
 
-public class _07_VariableScope {
+public class _07_VariableScope { //변수의 범위
     public static void methodA() {
-        //System.out.println(number); 메인 메소드 안에 있는건 메인메소드에서만 호출할수 있음.
+        //System.out.println(number); //에러! -> 메인 메소드 안에 있는건 메인메소드에서만 호출할수 있음.
         //System.out.println(result);
     }
     public static void methodB() {

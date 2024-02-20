@@ -10,7 +10,7 @@ public class _08_MainMethod {
         // 2. 도서 대출
         // 3. 도서 반납
 
-        if(args.length ==1){
+        if(args.length ==1){ //-> args에 입력된 숫자가 1여야함
             switch (args[0]){
                 case "1" :
                     System.out.println("도서 조회 메뉴입니다.");

@@ -30,16 +30,16 @@ public class _Quiz_07_01 {
 class HamBurger{
 
     String name="햄버거";
-
-    void cook (String name){
-        this.name = name;
-        System.out.println(this.name + "를 만듭니다.");
+    void cook(){
         System.out.println("빵사이에 들어가는 재료는?");
         System.out.println("> 양상추");
         System.out.println("+ 패티");
         System.out.println("+ 피클");
     }
-    void cook(){
+
+
+    void cook (String name){
+        this.name = name;
         System.out.println(this.name + "를 만듭니다.");
         System.out.println("빵사이에 들어가는 재료는?");
         System.out.println("> 양상추");

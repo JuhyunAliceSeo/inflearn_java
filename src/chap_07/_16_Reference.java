@@ -7,6 +7,7 @@ public class _16_Reference {
         //참조
         //기본 자료형(Primitive Data Types) : int, float, double, long, boolean
         //메소드를 가지지 않는다
+        //값을 넣지 않으면 0
         //소문자로 시작
         int[] i = new int[3];
         System.out.println(i[0]); //0
@@ -18,6 +19,7 @@ public class _16_Reference {
         // 참조 자료형(Non-Primitive, Reference Data Types) : String, Camera, FactoryCam...
         //기본적으로 널값을 가지고 있다
         //메소드를 가지고 있다
+        //값을 넣지 않으면 null
         //대문자로 시작
         String[] s= new String[3];
         System.out.println(s[0]); //null

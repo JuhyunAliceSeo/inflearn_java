@@ -7,7 +7,7 @@ public class FactoryCam extends Camera{ //자식클래스
         super("공장 카메라");
     }
     public void recordVideo(){
-        super.recordVideo(); //= System.out.println(this.name + " 동영상을 녹화합니다");
+        super.recordVideo(); //부모클래스의 " = System.out.println(this.name + " 동영상을 녹화합니다");" 쓸수 있다.
         detectFire();
     }
 

@@ -4,7 +4,7 @@ package chap_07.Camera;
 public class SpeedCam extends Camera{ ////자식클래스
     public SpeedCam() {
         // this.name = "과속단속 카메라";
-        super("과석단속 카메라");
+        super("과속단속 카메라");
     }
     public void takePicture(){
         super.takePicture();//System.out.println(this.name + " 사진을 촬영합니다");

@@ -9,11 +9,11 @@ public class _14_Polymorphism {
         //다형성
 
         //Class Person : 사람
-        //class student extends Person : 학생 (Student is a person)
+        //class student extends Person : 학생 (Student is a person)-> IS-A관계
         //class Teacher extends Person : 선생님 (Teacher is a person)
 
         Camera camera = new Camera();
-        Camera factoryCam = new FactoryCam();
+        Camera factoryCam = new FactoryCam(); //부모클래스로 적을수 있다
         Camera speedCam = new SpeedCam();
 
         camera.showMainFeature();
@@ -32,16 +32,23 @@ public class _14_Polymorphism {
         }
 
         System.out.println("--------------------");
-        //factoryCam.detectFire(); --> 이건 카메라로 되어있어서 쓸수 잆음
+        //factoryCam.detectFire(); --> 이건 카메라있는 부모클래스로 정의되어있어서 쓸수 잆음
+        /*
+        cameras[0] = new Camera();
+        cameras[1] = new FactoryCam();
+        cameras[2] = new SpeedCam();
+        */
+
         //speedCam.checkSpeed();
         //speedCam.recognizeLicensePlate();
 
-        if(camera instanceof Camera){
+        //대안
+        if(camera instanceof Camera){ //-> Camera 안에 있는 인스턴스(camera)이면
             System.out.println("카메라 입니다.");
         }
 
         if(factoryCam instanceof FactoryCam){
-            ((FactoryCam) factoryCam).detectFire();
+            ((FactoryCam) factoryCam).detectFire(); //(FactoryCam) factoryCam 형변환 like (double)3 -> 3.0
         }
 
         if(speedCam instanceof SpeedCam){

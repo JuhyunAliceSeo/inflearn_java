@@ -9,7 +9,7 @@ public class _00_AccessModifierTest {
         b1.modelName="까망이"; //public
         // b1.resolution = "FHD"; //default라 에러뜸
         // b1.price =200000; //private라 불가
-        // b1.color = "블랙"; //protected라 불가
+        // b1.color = "블랙"; //protected라 불가-> 자식클래스가 아니기 때문
 
         BlackBox b2;
 

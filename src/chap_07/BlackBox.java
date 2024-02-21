@@ -15,12 +15,12 @@ public class BlackBox {
 
     BlackBox(){  //기본 생성자 : 객체가 생성될때 자동으로 호출되는 메소드
 //        System.out.println("기본 생성자 호출");
-//        this.serialNumber = ++counter;
+//        this.serialNumber = ++counter;-> 블랙박스가 생길때마다 시리얼 넘버 추가
 //        System.out.println("새로운 시리얼 넘버를 발급 받았습니다 : " + this.serialNumber);
     }
 
     BlackBox(String modelName, String resolution, int price, String color){
-//        this(); //기본 생성자를 실행하고 아래쪽 다른 동작을 하게됨.
+//        this(); //기본 생성자(=BlackBox())를 실행하고 아래쪽 다른 동작을 하게됨.
 //
 //        this.modelName = modelName;
 //        this.resolution = resolution;
@@ -72,8 +72,8 @@ public class BlackBox {
 
     static void callServiceCenter(){ //공통적으로 사용하는 기능을 사용할떄 사용 가능
         System.out.println("서비스 센터(1588-0000)으로 연결합니다.");
-        // modelName = "test"; --> 스테틱으로 선언한 클래스는 메소드 내에서는 직접 접근 불가능 -->공통적으로 사용하는 기능을 사용할떄 사용 가능
-        canAutoReport = false; //-->메소드와 메소드 내에서 직접 접근 가능
+        // modelName = "test"; --> 인스턴스 클래스는 메소드 내에서는 직접 접근 불가능 -->공통적으로 사용하는 기능을 사용할떄 사용 가능
+        canAutoReport = false; //-->믈래스 내의 메소드와 메소드 내(스테틱으로 선언한)에서 직접 접근 가능
     }
 
     void appendModelName(String modelName) {
@@ -82,7 +82,7 @@ public class BlackBox {
     }
 
 
-    //Getter & Setter
+    //Getter(값을 가지고 오고) & Setter(값을 설정함)
     String getModelName() {
         return modelName;
     }

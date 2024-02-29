@@ -11,7 +11,7 @@ import chap_08.detector.FireDetector;
 public class _02_Interface {
     public static void main(String[] args) {
         //인터페이스 : 뼈대만 제공하는 구조
-        //단일 상속( extends )
+        //단일 상속( extends )과 달리 여러곳에서 상속가능함
 
         Reportable nomalReporter = new NomalReporter();
         //NomalReporter nomalReporter = new NomalReporter();

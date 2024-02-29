@@ -14,7 +14,7 @@ public class _02_GenericClass {
 
         System.out.println("-----------------------------");
 
-        CoffeeByName c3 = new CoffeeByName(34);
+        CoffeeByName c3 = new CoffeeByName(34); //object로 인해 다른것도 다 넣을수 있음.
         c3.ready();
         CoffeeByName c4 = new CoffeeByName("박명수");
         c4.ready();
@@ -29,7 +29,7 @@ public class _02_GenericClass {
 
         System.out.println("-----------------------------");
 
-        Coffee<Integer> c5 = new Coffee<>(35); //인티져로 받는다
+        Coffee<Integer> c5 = new Coffee<>(35); //제네릭클래스로 이용함 / 인티져로 받는다
         c5.ready();
         int c5Name = c5.name;
         System.out.println("주문 고객 번호 : " + c5Name);
@@ -40,7 +40,7 @@ public class _02_GenericClass {
         System.out.println("주문 고객 이름 : " + c6Name);
 
         System.out.println("-----------------------------");
-        CoffeeByUser<User> c7 = new CoffeeByUser<>(new User("강호동"));
+        CoffeeByUser<User> c7 = new CoffeeByUser<>(new User("강호동")); //유저클래스에 있는 유저를 커피주문함
         c7.ready();
 
         CoffeeByUser<User> c8 = new CoffeeByUser<>(new VIPUser("서장훈"));

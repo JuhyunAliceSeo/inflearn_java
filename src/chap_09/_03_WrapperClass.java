@@ -4,8 +4,8 @@ import java.sql.SQLOutput;
 
 public class _03_WrapperClass {
     public static void main(String[] args) {
-        //래퍼(Wrapper) 클래스
-        // int double float char
+        //래퍼(Wrapper) 클래스 :
+        // int double float char 기본형을 객체형태로 만들어 주는것
 
         Integer i = 123;
         Double d = 1.0;

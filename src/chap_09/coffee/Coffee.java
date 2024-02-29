@@ -1,6 +1,6 @@
 package chap_09.coffee;
 
-public class Coffee <T> {
+public class Coffee <T> { //제네릭클래스
     public T name;
 
     public Coffee(T name){
